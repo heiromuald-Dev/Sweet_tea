@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+header {
+    font-size: 1vw;
+    background: linear-gradient(#0c162d,#7490d1);
+    padding: 1vw;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+header .navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+header .navbar .logo img {
+    width: 6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+header .navbar .logo h1 {
+    color: white;
+    font-size: 3vw;
+}
+
+header .navbar nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8vw;
+    list-style: none;
+    gap: 1.5vw;
+}
+
+header .navbar nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    position: relative;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+
+.list-items:before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid greenyellow;
+    border-width: 0 0 3px 3px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.list-items:hover:before {
+    opacity: 1;
+    bottom: -8px;
+    left: -8px;
+}
+
+.list-items:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border: 3px solid greenyellow;
+    border-width: 3px 3px 0 0;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.list-items:hover:after {
+    opacity: 1;
+    top: -8px;
+    right: -8px;
+}
+
+header .navbar .search input {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 1vw;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    font-size: 1.2vw;
+    padding: 0.5vw;
+}
+
+input::placeholder {
+    color: azure;
+}
+
+header .navbar .search button {
+    height: 4vh;
+    aspect-ratio: 1/1;
+    border-radius: 1vw;
+    border: none;
+    background-color: transparent;
+}
+
+header .navbar .search button .fa-search {
+    color: white;
+    font-size: 1.3vw;
+}
+
+section {
+    padding-top: 2vw;
+}
+
+.head {
+    background: url(../img/627117853_1530701259062119_3556893100866845931_n.jpg) rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 75%;
+    background-position-x: -60%;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 8vw;
+}
+
+.head .text {
+    padding: 2vw;
+    align-items: start;
+    width: 35vw;
+    height: 60vh;
+    background-color: transparent;
+    color: greenyellow;
+    font-style: oblique;
+    position: relative;
+    left: 2vw;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    border: solid greenyellow;
+}
+
+.head .text p {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.btn {
+    margin-left: 10vw;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border-color: greenyellow;
+    align-items: center;
+}
+
+.btn a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.body {
+    background-color: #0c162d;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 8vw;
+}
+
+.body h1 {
+    color: greenyellow;
+    font-size: 2.5vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.body .card {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+}
+
+.body .card .card1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    height: 50vh;
+    border-radius: 1vw;
+    border: solid greenyellow;
+}
+
+.body .card .card1 .img1 {
+    overflow: hidden;
+}
+
+.body .card .card1 .img1 img {
+    width: 100%;
+    height: 40vh;
+    border-radius: 1vw 1vw 0 0;
+    transition: transform 1s;
+}
+
+.body .card .card1 .img1 img:hover {
+    transform: scale(1.3);
+    border-radius: 1vw 1vw 0 0 !important;
+}
+
+
+.body .card .card1 p {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.body .card .card1 .btn1 {
+    margin-bottom: 1vw;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border-color: greenyellow;
+}
+
+.body .card .card1 .btn1 a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.middle {
+    background-color: #0c162d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 8vw;
+}
+
+.middle .test {
+    width: 45%;
+    margin: 2vw;
+}
+
+.middle .test h1 {
+    color: greenyellow;
+    font-size: 2vw;
+}
+
+.middle .test p {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.middle .img{
+    background-image: url(../img/636998006_26205426372428851_8635287632410855511_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+    width: 50%;
+    height: 60vh;
+}
+
+.objectif {
+    position: relative;
+    top: 6vw;
+    flex-direction: column;
+    background-color: #0c162d;
+    width: 100%;
+    height: 90vh;
+}
+
+.objectif h1 {
+    color: greenyellow;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: .5vw;
+}
+
+.objectif .objt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objectif .objt .img2 img {
+    width: 40vw;
+    height: 74vh;
+}
+
+.objectif .objt .objt1 {
+    margin: 1vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+
+}
+
+.plus {
+    position: relative;
+    top: 5vw;
+    height: 40vh;
+    background-color: #0c162d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.plus .btn2 {
+    width: 10vw;
+    height: 6vh;
+    border-radius: 1vw;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border-color: greenyellow;
+    align-items: center;
+}
+
+.plus .btn2 a {
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 1.2vw;
+}
+
+.plus h1 {
+    color: white;
+    font-size: 2vw;
+}
+
+.email {
+    align-items: center;
+}
+
+.email input {
+    background-color: transparent;
+    color: greenyellow;
+    border-radius: 1.3vw;
+    border-color: greenyellow;
+    width: 20vw;
+    height: 6vh;
+}
+
+.email .btn3 {
+    width: 10vw;
+    height: 6vh;
+    border-radius: 1.3vw;
+    font-size: 1.2vw;
+    background-color: transparent;
+    border-color: greenyellow;
+    align-items: center;
+}
+
+.email .btn3 a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.foot {
+    margin-top: 5vw;
+    background: linear-gradient(#0c162d,#7490d1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid .2vw greenyellow;
+    border-bottom: solid .2vw greenyellow;
+}
+
+.foot .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+.foot .logo img {
+    width: 6vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.foot .logo h1 {
+    color: white;
+    font-size: 3vw;
+}
+
+.foot h3 {
+    font-size: 1.3vw;
+    color: greenyellow;
+}
+
+.menu {
+    position: relative;
+    bottom: 2.3vw;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.contact p {
+    color: white;
+    font-size: 1.2vw;
+}
+
+.reseau {
+    position: relative;
+    bottom: 5.6vw;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.fa-facebook {
+    color: blue;
+    font-size: 1.5vw;
+}
+
+.fa-whatsapp {
+    color: green;
+    font-size: 1.5vw;
+}
+
+.fa-instagram {
+    color: orangered;
+    font-size: 1.5vw;
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 1.3vw;
+}
+
+
+
+
+
+
+
+
